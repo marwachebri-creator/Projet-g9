@@ -1,0 +1,166 @@
+{
+  "dishes": [
+    {
+      "id": 1,
+      "name": "Pizza Margherita",
+      "category": "Pizza",
+      "price": 50,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=150"
+    },
+    {
+      "id": 2,
+      "name": "Burger Classic",
+      "category": "Burger",
+      "price": 60,
+      "stock": 30,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=150"
+    },
+    {
+      "id": 3,
+      "name": "Pâtes Carbonara",
+      "category": "Pâtes",
+      "price": 55,
+      "stock": 25,
+      "image": "https://images.unsplash.com/photo-1546548970-71785318a17b?w=150"
+    },
+    {
+      "id": 4,
+      "name": "Salade César",
+      "category": "Salade",
+      "price": 45,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=150"
+    },
+    {
+      "id": 5,
+      "name": "Sushi Mix",
+      "category": "Asiatique",
+      "price": 120,
+      "stock": 15,
+      "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=150"
+    },
+    {
+      "id": 6,
+      "name": "Tacos Poulet",
+      "category": "Mexicain",
+      "price": 40,
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=150"
+    },
+    {
+      "id": 7,
+      "name": "Steak Frites",
+      "category": "Viande",
+      "price": 90,
+      "stock": 20,
+      "image": "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=150"
+    },
+    {
+      "id": 8,
+      "name": "Tiramisu",
+      "category": "Dessert",
+      "price": 35,
+      "stock": 25,
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=150"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "table_id": 2,
+      "total": 85,
+      "status": "completed",
+      "date": "2025-01-01"
+    },
+    {
+      "id": 2,
+      "table_id": 5,
+      "total": 115,
+      "status": "pending",
+      "date": "2025-01-05"
+    },
+    {
+      "id": 3,
+      "table_id": 1,
+      "total": 45,
+      "status": "served",
+      "date": "2025-01-05"
+    }
+  ],
+  "tables": [
+    {
+      "id": 1,
+      "number": "T1",
+      "capacity": 2,
+      "status": "libre"
+    },
+    {
+      "id": 2,
+      "number": "T2",
+      "capacity": 4,
+      "status": "occupée"
+    },
+    {
+      "id": 3,
+      "number": "T3",
+      "capacity": 6,
+      "status": "réservée"
+    },
+    {
+      "id": 4,
+      "number": "T4",
+      "capacity": 2,
+      "status": "libre"
+    },
+    {
+      "id": 5,
+      "number": "T5",
+      "capacity": 4,
+      "status": "libre"
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "client": "Fatima Zahra El Amraoui",
+      "table_id": 3,
+      "date": "2025-01-06",
+      "time": "19:00",
+      "persons": 4,
+      "status": "confirmée"
+    },
+    {
+      "id": 2,
+      "client": "Mohamed Alami",
+      "table_id": 2,
+      "date": "2025-01-07",
+      "time": "20:00",
+      "persons": 2,
+      "status": "en attente"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Driss Rguibi",
+      "role": "Chef",
+      "email": "driss@restaurant.com",
+      "phone": "06 12 34 56 78"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Bennani",
+      "role": "Serveur",
+      "email": "sarah@restaurant.com",
+      "phone": "06 98 76 54 32"
+    },
+    {
+      "id": 3,
+      "name": "Yassine Amrani",
+      "role": "Barman",
+      "email": "yassine@restaurant.com",
+      "phone": "06 11 22 33 44"
+    }
+  ]
+}
