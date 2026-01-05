@@ -1,0 +1,297 @@
+{
+  "dishes": [
+    {
+      "id": 1,
+      "name": "Pizza Margherita",
+      "category": "Pizza",
+      "price": 50,
+      "stock": 45,
+      "description": "Pizza classique avec tomate et mozzarella"
+    },
+    {
+      "id": 2,
+      "name": "Burger Classic",
+      "category": "Burger",
+      "price": 60,
+      "stock": 30,
+      "description": "Burger avec steak, salade et tomate"
+    },
+    {
+      "id": 3,
+      "name": "Pâtes Carbonara",
+      "category": "Pâtes",
+      "price": 55,
+      "stock": 25,
+      "description": "Pâtes avec crème, lardons et parmesan"
+    },
+    {
+      "id": 4,
+      "name": "Salade César",
+      "category": "Salade",
+      "price": 45,
+      "stock": 40,
+      "description": "Salade avec poulet, croutons et sauce césar"
+    },
+    {
+      "id": 5,
+      "name": "Steak Frites",
+      "category": "Viande",
+      "price": 90,
+      "stock": 20,
+      "description": "Steak de bœuf avec frites maison"
+    },
+    {
+      "id": 6,
+      "name": "Saumon Grillé",
+      "category": "Poisson",
+      "price": 110,
+      "stock": 15,
+      "description": "Saumon frais grillé avec légumes"
+    },
+    {
+      "id": 7,
+      "name": "Tiramisu",
+      "category": "Dessert",
+      "price": 35,
+      "stock": 50,
+      "description": "Dessert italien classique"
+    },
+    {
+      "id": 8,
+      "name": "Soupe du jour",
+      "category": "Entrée",
+      "price": 25,
+      "stock": 35,
+      "description": "Soupe fraîche préparée quotidiennement"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1001,
+      "customer": "Mohamed Alami",
+      "dishes": [
+        1,
+        7
+      ],
+      "amount": 19.98,
+      "status": "completed",
+      "time": "12:30",
+      "date": "2025-01-10"
+    },
+    {
+      "id": 1002,
+      "customer": "Khadija Idrissi",
+      "dishes": [
+        2,
+        3
+      ],
+      "amount": 22.98,
+      "status": "pending",
+      "time": "13:15",
+      "date": "2025-01-10"
+    },
+    {
+      "id": 1003,
+      "customer": "Youssef Bennani",
+      "dishes": [
+        5,
+        4
+      ],
+      "amount": 24.98,
+      "status": "completed",
+      "time": "13:45",
+      "date": "2025-01-10"
+    },
+    {
+      "id": 1004,
+      "customer": "Layla Chraibi",
+      "dishes": [
+        6
+      ],
+      "amount": 18.99,
+      "status": "completed",
+      "time": "14:20",
+      "date": "2025-01-10"
+    },
+    {
+      "id": 1005,
+      "customer": "Omar Tazi",
+      "dishes": [
+        3,
+        8
+      ],
+      "amount": 17.98,
+      "status": "cancelled",
+      "time": "15:00",
+      "date": "2025-01-10"
+    },
+    {
+      "id": 1006,
+      "customer": "Amina Berrada",
+      "dishes": [
+        4
+      ],
+      "amount": 8.99,
+      "status": "pending",
+      "time": "15:30",
+      "date": "2025-01-10"
+    }
+  ],
+  "tables": [
+    {
+      "id": 1,
+      "number": "T01",
+      "capacity": 2,
+      "status": "occupied",
+      "currentOrder": 1001
+    },
+    {
+      "id": 2,
+      "number": "T02",
+      "capacity": 4,
+      "status": "available",
+      "currentOrder": null
+    },
+    {
+      "id": 3,
+      "number": "T03",
+      "capacity": 6,
+      "status": "reserved",
+      "currentOrder": 1002
+    },
+    {
+      "id": 4,
+      "number": "T04",
+      "capacity": 2,
+      "status": "occupied",
+      "currentOrder": 1003
+    },
+    {
+      "id": 5,
+      "number": "T05",
+      "capacity": 4,
+      "status": "available",
+      "currentOrder": null
+    },
+    {
+      "id": 6,
+      "number": "T06",
+      "capacity": 8,
+      "status": "reserved",
+      "currentOrder": null
+    },
+    {
+      "id": 7,
+      "number": "T07",
+      "capacity": 2,
+      "status": "occupied",
+      "currentOrder": 1004
+    },
+    {
+      "id": 8,
+      "number": "T08",
+      "capacity": 4,
+      "status": "available",
+      "currentOrder": null
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "customer": "Mohamed Alami",
+      "phone": "01 23 45 67 89",
+      "tableId": 3,
+      "guests": 4,
+      "date": "2025-01-10",
+      "time": "19:00",
+      "status": "confirmed"
+    },
+    {
+      "id": 2,
+      "customer": "Khadija Idrissi",
+      "phone": "01 23 45 67 90",
+      "tableId": 6,
+      "guests": 6,
+      "date": "2025-01-10",
+      "time": "20:30",
+      "status": "confirmed"
+    },
+    {
+      "id": 3,
+      "customer": "Youssef Bennani",
+      "phone": "01 23 45 67 91",
+      "tableId": 5,
+      "guests": 3,
+      "date": "2025-01-11",
+      "time": "13:00",
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "customer": "Layla Chraibi",
+      "phone": "01 23 45 67 92",
+      "tableId": 2,
+      "guests": 2,
+      "date": "2025-01-11",
+      "time": "14:00",
+      "status": "cancelled"
+    },
+    {
+      "id": 5,
+      "customer": "Omar Tazi",
+      "phone": "01 23 45 67 93",
+      "tableId": 8,
+      "guests": 4,
+      "date": "2025-01-12",
+      "time": "12:30",
+      "status": "confirmed"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Driss Rguibi",
+      "role": "Chef",
+      "email": "driss.rguibi@restaurant.com",
+      "phone": "06 12 34 56 78",
+      "shift": "Matin",
+      "salary": 3800
+    },
+    {
+      "id": 2,
+      "name": "Sarah Bennani",
+      "role": "Serveur",
+      "email": "sarah.bennani@restaurant.com",
+      "phone": "06 98 76 54 32",
+      "shift": "Matin",
+      "salary": 2200
+    },
+    {
+      "id": 3,
+      "name": "Yassine Amrani",
+      "role": "Barman",
+      "email": "yassine.amrani@restaurant.com",
+      "phone": "06 11 22 33 44",
+      "shift": "Soir",
+      "salary": 2300
+    },
+    {
+      "id": 4,
+      "name": "Salma El Alami",
+      "role": "Manager",
+      "email": "salma.elalami@restaurant.com",
+      "phone": "06 55 44 33 22",
+      "shift": "Journée",
+      "salary": 4500
+    },
+    {
+      "id": 5,
+      "name": "Amine Tazi",
+      "role": "Plongeur",
+      "email": "amine.tazi@restaurant.com",
+      "phone": "06 77 88 99 00",
+      "shift": "Soir",
+      "salary": 1900
+    }
+  ]
+}
