@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--optimise la vitesse de cnx du nav-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--// -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="login-page"> <!--style la page logine specifiquement-->
+    <div class="login-container"> <!--Conteneur principal-->
+        <div class="login-card">
+            <div class="logo">
+                <i class="fas fa-utensils"></i> <!--Logo Icône de couverts-->
+                <h1 data-key="login_title">Restaurant Manager</h1>
+                <p data-key="app_subtitle">Système de gestion de restaurant</p>
+            </div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">
+                        <i class="fas fa-user"></i> <span data-key="username_label">Nom d'utilisateur</span>
+                    </label>
+                    <input type="text" id="username" placeholder="admin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-lock"></i> <span data-key="password_label">Mot de passe</span>
+                    </label>
+                    <input type="password" id="password" placeholder="admin" required>
+                </div>
+
+                <button type="submit" class="btn-login">
+                    <i class="fas fa-sign-in-alt"></i> <span data-key="login_btn">Se connecter</span>
+                    <!-- Icône de porte -->
+                </button>
+
+                <div class="error-message" id="errorMessage"></div>
+
+                <div class="login-info">
+                    <p><strong data-key="default_creds">Identifiants par défaut:</strong></p>
+                    <p data-key="creds_text">Utilisateur: <code>admin</code> | Mot de passe: <code>admin</code></p>
+                </div>
+            </form>
+
+            <div class="footer">
+                <p>© 2025 Restaurant Management System</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
